@@ -1,0 +1,418 @@
+*{
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body{
+  overflow-x : hidden;
+}
+
+header{
+  width: 100vw;
+  height: 15vh;
+  background-color: #252525;
+  color: #fff;
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+}
+
+header .logo{
+  display: flex;
+  width: 10vw;
+  height: 15vh;
+  align-items: center;
+}
+
+.logo img{
+  width: 60px;
+  height: 60px;
+  margin-right: 10px;
+}
+
+header nav{
+  width: 17vw;
+  heigth: 15vw;
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  gap: 10px;
+}
+
+header nav img{
+  width: 35px;
+  
+}
+
+.nav-mobile{
+  display: none;
+}
+
+
+main{
+  width: 100vw;
+}
+
+p{
+  font-family: 'Roboto', sans-serif;
+  font-size: 27px;
+}
+
+h2{
+  font-family: 'Roboto Serif', serif;
+}
+
+.banner-inicial{
+  width: 100vw;
+  height: 70vh;
+  background-image: url('../imagens/birthday-hat-dog.png');
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  color: #FFFFFF;
+  font-size: 35px;
+}
+
+.banner-inicial img{
+  width: 90px;
+}
+
+.banner-inicial h2{
+  text-align: center;
+  margin-bottom: 15px;
+  width: 60vw;
+}
+
+.banner-info{
+  width: 100vw;
+  height: 70vh;
+  background-image: url('../imagens/dog-with-animal-hat.png');
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center;
+  display: flex;
+  align-items: center;
+}
+
+.banner-info h2{
+  font-size: 39px;
+}
+
+.info-text{
+  width: 40vw;
+  margin: 0 50px;
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+}
+
+.button-info{
+  background-color: #3A342F;
+  color: white;
+  border-radius: 44px;
+  width: 22vw;
+  padding: 25px 10px;
+  text-align: center;
+}
+
+.banner-mordomia{
+  width: 100vw;
+  height: 70vh;
+  background-image: url('../imagens/dog-on-the-side.png');
+  background-size: cover;
+  background-repeat: no-repeat;
+  color: white;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.banner-mordomia h2{
+  font-size: 39px;
+  width: 20vw;
+}
+
+.mordomia-text{
+  width: 45vw;
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+  position: relative;
+  left: 20vw;
+}
+
+.button-mordomia{
+  background-color: white;
+  color: black;
+  border-radius: 44px;
+  width: 22vw;
+  padding: 25px 10px;
+  text-align: center;
+}
+
+
+.apoio{
+  width: 100vw;
+  height: 15vh;
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  color: #FD6A9A;
+}
+
+
+.apoio-text{
+  display: flex;
+  width: 70%;
+  justify-content: space-around;
+}
+
+.apoio-images{
+  display: flex;
+  width: 50%;
+  justify-content: space-around;
+  gap: 15px;
+}
+
+.apoio-images img{
+  width: 150px;
+}
+
+footer{
+  width: 100vw;
+  height: 30vh;
+  display: flex;
+  align-items: center;
+  background-color: #EB4A7B;
+  gap: 50px;
+  padding: 30px 50px;
+  color: white;
+}
+
+footer h2{
+  font-size: 24px;
+  margin-bottom: 20px;
+}
+
+footer p{
+  font-size: 14px;
+}
+
+footer div{
+  display: flex;
+  flex-direction: column;
+  padding: 20px;
+  gap: 10px;
+}
+
+
+.logo-footer,
+.links-footer{
+  display: none;
+}
+
+@media (max-width: 560px){
+  header{
+    justify-content: space-between;
+    padding: 0 5vw;
+    position: fixed;
+    z-index: 1;
+  }
+
+  .desktop{
+    display: none;
+  }
+
+  .nav-mobile{
+    display: flex;
+  }
+
+  main{
+    width: 100vw;
+  }
+
+  .banner-inicial,
+  .banner-info,
+  .banner-mordomia{
+    width: 100vw;
+    height: 100vh;
+  }
+
+  .banner-inicial{
+    background-image: url('../imagens/birthday-hat-dog-mobile.png');
+  }
+
+  .banner-inicial h2{
+    width: 95vw;
+    font-size: 1em;
+  }
+
+  .banner-info{
+    background-image: url('../imagens/dog-with-animal-hat-mobile.png');
+    display: block;
+  }
+
+  .info-text{
+    width: 100vw;
+    margin: 0 30px;
+    padding: 50px 0;
+  }
+
+  .info-text .p-info{
+    font-size: 1.1em;
+    width: 80vw;
+  }
+
+  .info-text h2{
+    font-size: 1.8em;
+    width: 82vw;
+  }
+
+  .button-info{
+    width: 150px;
+    text-align:center;
+    padding:  15px 10px;
+  }
+
+  .button-info .p-button-info{
+    font-size: 1.1em;
+  }
+
+  .banner-mordomia{
+    background-image: url('../imagens/dog-on-the-side-mobile.png');
+    display: block;
+  }
+  
+  .mordomia-text{
+    width: 100vw;
+    position: static;
+    margin: 0 30px;
+    padding: 50px 0;
+  }
+
+  .mordomia-text h2{
+    font-size: 1.8em;
+    width: 100vw;
+  }
+
+  .mordomia-text .p-mordomia{
+    font-size: 1.1em;
+    width: 80vw;
+  }
+
+  .button-mordomia{
+    width: 150px;
+    text-align:center;
+    padding:  15px 10px;
+  }
+
+  .button-mordomia .p-button-mordomia{
+    font-size: 1.1em;
+  }
+
+  .apoio-text{
+    width: 100vw;
+    text-align: center;
+    flex-direction: column;
+    gap: 10px;
+  }
+
+  .apoio-images{
+    width: 100vw;
+    justify-content: space-around;
+  }
+
+
+
+  footer{
+    width: 100vw;
+    height: auto;
+    padding: 50px 0;
+    flex-direction: column;
+    text-align: center;
+    gap: 10px;
+  }
+
+  .logo-footer,
+  .links-footer{
+    display: flex;
+    flex-direction: row;
+    width: 100vw;
+    justify-content: center;
+    height: auto;
+    align-items: center;
+}
+
+  .logo-footer h2{
+    margin: 0;
+  }
+
+  .logo-footer img{
+    width: 60px;
+    height: 60px;
+  }
+
+  .links-footer img{
+    width: 35px;
+  }
+}
+@media (min-width: 1428px ){
+  body{
+    width: 100vw;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+  }
+
+  main{
+    max-width: 70vw;
+    margin: auto;
+    box-shadow: rgba(17, 12, 46, 0.15) 0px 48px 100px 0px;
+  }
+
+  .banner-inicial,
+  .banner-info,
+  .banner-mordomia,
+  .apoio{
+    width: 100%;
+  }
+
+
+  .banner-inicial,
+  .banner-info,
+  .banner-mordomia
+  {
+    width: 100%;
+    height: 100vh;
+  }
+
+  .info-text{
+    width: 20vw;
+  }
+
+  .banner-inicial h2{
+    width: 28vw;
+  }
+
+  .button{
+    width: 12vw;
+  }
+
+
+  .mordomia-text{
+    left: 15vw;
+    width: 22vw;
+  }
+
+
+  .button-mordomia{
+    width: 12vw;
+  }
+
+}
