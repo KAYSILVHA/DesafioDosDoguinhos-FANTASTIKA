@@ -334,6 +334,10 @@ footer div{
     justify-content: space-around;
   }
 
+  .apoio-images img{
+    width: 130px;
+  }
+
   footer{
     width: 100vw;
     height: auto;
