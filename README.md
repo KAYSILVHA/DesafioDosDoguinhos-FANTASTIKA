@@ -27,7 +27,7 @@ Este foi o desafio final do módulo 1. Este desafio tinha como objetivo clonar u
 Utilizamos nossos conhecimentos em HTML e CSS adquiridos durante o curso para realizarmos o desafio responsivo. 
 <br>
 <p align="center">
-  <img alt="Vai na Web" src="https://images2.imgbox.com/2f/22/ie6m7srM_o.png" width="80%">
+  <img alt="Vai na Web" src="./design.png" width="100%">
 </p>
 - [Visite o projeto online](https://kaysilvha.github.io/DesafioDosDoguinhos-FANTASTIKA/)
 
