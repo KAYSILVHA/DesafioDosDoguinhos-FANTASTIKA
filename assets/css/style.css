@@ -31,6 +31,10 @@ header .logo{
   margin-right: 10px;
 }
 
+.logo h2{
+  font-size: 1.7em;
+}
+
 header nav{
   width: 17vw;
   heigth: 15vw;
@@ -42,7 +46,6 @@ header nav{
 
 header nav img{
   width: 35px;
-  
 }
 
 .nav-mobile{
@@ -59,72 +62,72 @@ p{
   font-size: 27px;
 }
 
-h2{
+main h2{
   font-family: 'Roboto Serif', serif;
+  font-size: 39px;
 }
 
 .banner-inicial{
   width: 100vw;
-  height: 70vh;
+  height: 100vh;
   background-image: url('../imagens/birthday-hat-dog.png');
   background-repeat: no-repeat;
-  background-size: cover;
+  background-size: 100% 100%;
   background-position: center;
   display: flex;
   flex-direction: column;
   align-items: center;
-  justify-content: center;
   color: #FFFFFF;
-  font-size: 35px;
 }
 
 .banner-inicial img{
-  width: 90px;
+  width: 100px;
 }
 
 .banner-inicial h2{
   text-align: center;
   margin-bottom: 15px;
-  width: 60vw;
+  width: 27vw;
+  margin-top: 100px;
+  font-size: 50px;
 }
 
 .banner-info{
   width: 100vw;
-  height: 70vh;
+  height: 100vh;
   background-image: url('../imagens/dog-with-animal-hat.png');
-  background-size: cover;
+  background-size: 100% 100%;
   background-repeat: no-repeat;
   background-position: center;
   display: flex;
   align-items: center;
 }
 
-.banner-info h2{
-  font-size: 39px;
-}
-
 .info-text{
-  width: 40vw;
-  margin: 0 50px;
+  width: 20vw;
+  margin: 0 70px;
   display: flex;
   flex-direction: column;
   gap: 20px;
 }
 
-.button-info{
+.button-info,
+.button-mordomia{
   background-color: #3A342F;
   color: white;
   border-radius: 44px;
-  width: 22vw;
-  padding: 25px 10px;
+  width: 12vw;
+  padding: 25px 8px;
   text-align: center;
+  margin-top: 15px;
+  font-weight: bold;
 }
 
-.banner-mordomia{
+.banner-mordomia-saudavel{
   width: 100vw;
-  height: 70vh;
+  height: 100vh;
   background-image: url('../imagens/dog-on-the-side.png');
-  background-size: cover;
+  background-size: 100% 100%;
   background-repeat: no-repeat;
   color: white;
   display: flex;
@@ -132,13 +135,13 @@ h2{
   justify-content: center;
 }
 
-.banner-mordomia h2{
+.banner-mordomia-saudavel h2{
   font-size: 39px;
   width: 20vw;
 }
 
 .mordomia-text{
-  width: 45vw;
+  width: 19vw;
   display: flex;
   flex-direction: column;
   gap: 20px;
@@ -149,10 +152,6 @@ h2{
 .button-mordomia{
   background-color: white;
   color: black;
-  border-radius: 44px;
-  width: 22vw;
-  padding: 25px 10px;
-  text-align: center;
 }
 
 
@@ -168,7 +167,7 @@ h2{
 
 .apoio-text{
   display: flex;
-  width: 70%;
+  width: 50%;
   justify-content: space-around;
 }
 
@@ -210,7 +209,6 @@ footer div{
   gap: 10px;
 }
 
-
 .logo-footer,
 .links-footer{
   display: none;
@@ -222,6 +220,10 @@ footer div{
     padding: 0 5vw;
     position: fixed;
     z-index: 1;
+  }
+
+  header h2{
+    font-size: 1.5em;
   }
 
   .desktop{
@@ -238,18 +240,21 @@ footer div{
 
   .banner-inicial,
   .banner-info,
-  .banner-mordomia{
+  .banner-mordomia-saudavel{
     width: 100vw;
     height: 100vh;
   }
 
   .banner-inicial{
     background-image: url('../imagens/birthday-hat-dog-mobile.png');
+    padding: 20px;
   }
 
   .banner-inicial h2{
-    width: 95vw;
-    font-size: 1em;
+    padding: 0 10px;
+    margin-top: 180px;
+    width: 330px;
+    font-size: 1.9em;
   }
 
   .banner-info{
@@ -263,13 +268,15 @@ footer div{
     padding: 50px 0;
   }
 
+
   .info-text .p-info{
     font-size: 1.1em;
     width: 80vw;
   }
 
   .info-text h2{
-    font-size: 1.8em;
+    width: 100vw;
+    font-size: 1.5em;
     width: 82vw;
   }
 
@@ -283,7 +290,7 @@ footer div{
     font-size: 1.1em;
   }
 
-  .banner-mordomia{
+  .banner-mordomia-saudavel{
     background-image: url('../imagens/dog-on-the-side-mobile.png');
     display: block;
   }
@@ -296,7 +303,7 @@ footer div{
   }
 
   .mordomia-text h2{
-    font-size: 1.8em;
+    font-size: 1.5em;
     width: 100vw;
   }
 
@@ -327,8 +334,6 @@ footer div{
     justify-content: space-around;
   }
 
-
-
   footer{
     width: 100vw;
     height: auto;
@@ -346,7 +351,7 @@ footer div{
     justify-content: center;
     height: auto;
     align-items: center;
-}
+  }
 
   .logo-footer h2{
     margin: 0;
@@ -361,58 +366,32 @@ footer div{
     width: 35px;
   }
 }
-@media (min-width: 1428px ){
-  body{
-    width: 100vw;
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
-  }
 
-  main{
-    max-width: 70vw;
-    margin: auto;
-    box-shadow: rgba(17, 12, 46, 0.15) 0px 48px 100px 0px;
-  }
+
+@media (min-width: 560px) and (max-width: 1340px){
 
   .banner-inicial,
   .banner-info,
-  .banner-mordomia,
-  .apoio{
-    width: 100%;
+  .banner-mordomia-saudavel{
+    height: 60vh;
   }
-
-
-  .banner-inicial,
-  .banner-info,
-  .banner-mordomia
-  {
-    width: 100%;
-    height: 100vh;
-  }
-
-  .info-text{
-    width: 20vw;
-  }
-
   .banner-inicial h2{
-    width: 28vw;
+    width: 100vw;
+    text-align: center;
   }
 
-  .button{
-    width: 12vw;
-  }
-
-
+  .info-text,
   .mordomia-text{
-    left: 15vw;
-    width: 22vw;
+    width: 40vw;
   }
 
-
+  .button-info,
   .button-mordomia{
-    width: 12vw;
+    width: 250px;
   }
 
+  .apoio-text{
+    width: 80vw;
+    justify-content: space-around;
+  } 
 }
