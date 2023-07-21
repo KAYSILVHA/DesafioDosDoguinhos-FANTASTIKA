@@ -230,10 +230,6 @@ footer div{
     display: flex;
   }
 
-  main{
-    width: 100vw;
-  }
-
   .banner-inicial,
   .banner-info,
   .banner-mordomia-saudavel{
